@@ -1,40 +1,26 @@
 .bubble {
-  border-radius: 30px;
+  position: relative;
   padding: 12px 20px;
+  border-radius: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
   display: inline-block;
   max-width: 600px;
-}
-
-.bubble {
   margin-right: 25%;
-  background-color: #eee;
-  position: relative;
+  background-color: #0d1117;
+  color: #c9d1d9;
 }
 
 .bubble:last-child:before,
-.bubble:nth-last-child(2):before {
+.bubble:nth-last-child(1):before {
   content: '';
   position: absolute;
-  z-index: 0;
-  bottom: 0;
-  left: -12px;
-  height: 26px;
-  width: 30px;
-  background: #eee;
-  border-bottom-right-radius: 20px;
-}
-
-.bubble:last-child:after,
-.bubble:nth-last-child(2):after {
-  content: '';
-  position: absolute;
+  border-style: solid;
+  border-width: 15px 10px 0;
+  border-color: #0d1117 transparent;
+  display: block;
+  width: 0;
   z-index: 1;
-  bottom: 0;
-  left: -15px;
-  width: 15px;
-  height: 27px;
-  background: #00a000;
-  border-bottom-right-radius: 15px;
+  bottom: -14px;
+  left: 15px;
 }
